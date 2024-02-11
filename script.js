@@ -31,6 +31,8 @@ show.onclick = function(){
     }
 };
 
+// Password strength calculation (Use NIST password guidelines)
+// https://blog.netwrix.com/2022/11/14/nist-password-guidelines/
 function strength(password){
     let i = 0;
     if (password.length > 6){

@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body{
@@ -16,7 +17,10 @@ body{
     position : relative;
     width: 400px;
     padding: 30px;
-    background: #454545;
+    background: #ffffff;
+    opacity: 0.95;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -27,7 +31,8 @@ body{
 }
 
 .container h2{
-    font-weight: 500;
+    font-weight: 50;
+    font-size: 1.1em;
 }
 
 .container .passwordInput{
@@ -43,7 +48,7 @@ body{
     outline: none;
     padding: 10px;
     color: #fff;
-    font-size: 1.1em;
+    font-size: 0.9em;
 }
 
 .container .strengthMeter{
@@ -61,25 +66,24 @@ body{
     width: 0;
     height: 100%;
     transition: 0.5s;
-    background: #f00;
 }
 
 .container.weak .strengthMeter::before{
-    width: 10%;
+    width: 20%;
     background: #f00;
-    filter: drop-shadow(0 0 5px #f00) drop-shadow(0 0 10px #f00) drop-shadow(0 0 20px #f00)
+    filter: drop-shadow(0 0 5px #f00) drop-shadow(0 0 10px #f00) drop-shadow(0 0 20px #f00);
 }
 
 .container.medium .strengthMeter::before{
     width: 66.66%;
     background: #ffa500;
-    filter: drop-shadow(0 0 5px #ffa500) drop-shadow(0 0 10px #ffa500) drop-shadow(0 0 20px #ffa500)
+    filter: drop-shadow(0 0 5px #ffa500) drop-shadow(0 0 10px #ffa500) drop-shadow(0 0 20px #ffa500);
 }
 
 .container.strong .strengthMeter::before{
     width: 100%;
     background: #0f0;
-    filter: drop-shadow(0 0 5px #0f0) drop-shadow(0 0 10px #0f0) drop-shadow(0 0 20px #0f0)
+    filter: drop-shadow(0 0 5px #0f0) drop-shadow(0 0 10px #0f0) drop-shadow(0 0 20px #0f0);
 }
 
 .container .strengthMeter::after{
@@ -91,19 +95,19 @@ body{
 }
 
 .container.weak .strengthMeter::after{
-    content: "Your Password Is Weak!";
+    content: "Weak Password";
     color: #f00;
     filter: drop-shadow(0 0 5px #f00);
 }
 
 .container.medium .strengthMeter::after{
-    content: "Your Password Is Medium!";
+    content: "Medium Password!";
     color: #ffa500;
     filter: drop-shadow(0 0 5px #ffa500);
 }
 
 .container.strong .strengthMeter::after{
-    content: "Your Password Is Strong!";
+    content: "Strong Password!";
     color: #0f0;
     filter: drop-shadow(0 0 5px #0f0);
 }
