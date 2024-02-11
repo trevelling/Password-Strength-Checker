@@ -12,3 +12,5 @@ How to Use
     Enter a password into the input field.
     As you type, the password strength will be evaluated and displayed visually.
     Optionally click on the "Show/Hide" button to toggle password visibility.
+
+Test it out @ https://trevelling.github.io/Password-Strength-Checker/
