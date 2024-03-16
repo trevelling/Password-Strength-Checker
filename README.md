@@ -1,3 +1,5 @@
+# Password Strength Checker
+
 This program allows users to check the strength of their passwords by themselves. By simply entering a password into the input field, the tool evaluates its strength and provides feedback to the user. The strength of the password is categorized as weak, medium, or strong based on various factors such as length, complexity, and character variety.
 
 Features
